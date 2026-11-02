@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ms"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8fc"><title>Suara Saya AAC</title>
+<style>
+:root{--ink:#26364a;--muted:#68778a;--line:#e2e8f0;--blue:#4169a8}*{box-sizing:border-box}body{margin:0;background:#f7f8fc;color:var(--ink);font-family:Arial,sans-serif;line-height:1.5}header{text-align:center;background:white;padding:22px 12px;border-bottom:1px solid var(--line)}h1{margin:0;color:#31527f;font-size:30px;letter-spacing:1px}header p{margin:4px;color:var(--muted);font-size:14px}main{max-width:950px;margin:auto;padding:16px}.intro,.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:14px;margin-bottom:15px}.intro{font-size:13px;color:var(--muted)}.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.cat,.card,.tab,.option{background:white;border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;color:var(--ink)}.cat{text-align:left;min-height:75px}.cat b{display:block;font-size:13px}.cat small{color:var(--muted)}.cat.active{border:2px solid var(--blue);background:#edf3ff}.heading{display:flex;justify-content:space-between;align-items:center;margin:18px 2px 10px}.heading h2{font-size:19px;margin:0}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(105px,1fr));gap:9px}.card{text-align:center;min-height:105px}.card.selected{border:2px solid var(--blue);background:#edf3ff}.emoji{display:block;font-size:28px}.word{font-weight:bold;font-size:13px}.hidden{display:none}.panel{margin-top:18px}.selected{font-weight:900}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:14px 0}.tab{font-weight:bold;padding:10px 4px}.tab.active{background:#edf3ff;border-color:#9bb5df;color:#315b99}.content{background:#fafbfd;border:1px solid var(--line);border-radius:12px;padding:14px;min-height:140px}.muted{font-size:13px;color:var(--muted)}.big{font-size:20px;font-weight:bold;margin:7px 0 12px}.action{border:0;border-radius:9px;background:#315b99;color:white;padding:10px 13px;margin:4px 5px 4px 0;cursor:pointer;font-weight:bold}.secondary{background:#edf1f6;color:#34445a}.options{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.option{font-weight:bold}.correct{background:#edf8ef;border-color:#5c946d}.wrong{background:#fff0f0;border-color:#c76b6b}.feedback{font-weight:bold;margin-top:10px;min-height:24px}footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}@media(min-width:700px){.cats{grid-template-columns:repeat(4,1fr)}.cards{grid-template-columns:repeat(5,1fr)}}
+</style></head><body>
+<header><h1>SUARA SAYA AAC</h1><p>Sentuh · Dengar · Belajar · Berkomunikasi</p></header>
+<main><div class="intro">Pilih kategori atau imbas NFC pada papan pameran untuk membuka kategori berkaitan. Pilih kad untuk meneroka bahan komunikasi, pembelajaran dan latihan.</div>
+<div class="cats">
+<button class="cat" data-cat="perasaan"><b>❤️ PERASAAN</b><small>9 kad · Emosi</small></button>
+<button class="cat" data-cat="pilihan"><b>🖐️ PILIHAN DAN RESPONS</b><small>12 kad · Pilihan & respons</small></button>
+<button class="cat" data-cat="keperluan"><b>🏠 KEPERLUAN HARIAN</b><small>10 kad · Keperluan</small></button>
+<button class="cat" data-cat="aktiviti"><b>🎨 AKTIVITI</b><small>9 kad · Aktiviti</small></button></div>
+<div class="heading"><h2 id="catTitle">PERASAAN</h2><span class="muted" id="catCount">9 kad</span></div><div class="cards" id="cards"></div>
+<section class="panel hidden" id="detail"><div class="muted">KAD DIPILIH</div><div class="big" id="wordTitle"></div><div class="tabs"><button class="tab active" data-tab="komunikasi">💬 Komunikasi</button><button class="tab" data-tab="pembelajaran">📖 Pembelajaran</button><button class="tab" data-tab="latihan">🧩 Latihan</button></div><div class="content" id="content"></div></section></main><footer>Suara Saya AAC · Sistem komunikasi dan pembelajaran interaktif</footer>
+<script>
+const D={
+perasaan:{title:"PERASAAN",items:[["GEMBIRA","😊","Saya berasa gembira.","gem-bi-ra"],["TAKUT","😨","Saya berasa takut.","ta-kut"],["PENAT","😮‍💨","Saya berasa penat.","pe-nat"],["SAKIT","🤕","Saya berasa sakit.","sa-kit"],["TENANG","😌","Saya berasa tenang.","te-nang"],["KECEWA","😞","Saya berasa kecewa.","ke-ce-wa"],["TERKEJUT","😲","Saya berasa terkejut.","ter-ke-jut"],["SUNYI","🥺","Saya berasa sunyi.","su-nyi"],["SAYANG","❤️","Saya sayang kamu.","sa-yang"]]},
+pilihan:{title:"PILIHAN DAN RESPONS",items:[["YA","👍","Ya, saya setuju.","ya"],["TIDAK","👎","Tidak, saya tidak mahu.","ti-dak"],["MAHU","🙋","Saya mahu ini.","ma-hu"],["TIDAK MAHU","✋","Saya tidak mahu.","ti-dak ma-hu"],["BERHENTI","🛑","Tolong berhenti.","ber-hen-ti"],["LAGI","🔁","Saya mahu lagi.","la-gi"],["SIAP","✅","Saya sudah siap.","si-ap"],["PILIH","☝️","Saya mahu memilih.","pi-lih"],["TUNGGU","⏳","Sila tunggu sebentar.","tung-gu"],["BATAL","❌","Saya mahu membatalkan.","ba-tal"],["BERI","🤲","Tolong berikan kepada saya.","be-ri"],["JANGAN","🚫","Jangan buat begitu.","ja-ngan"]]},
+keperluan:{title:"KEPERLUAN HARIAN",items:[["MAKAN","🍚","Saya mahu makan.","ma-kan"],["MINUM","🥤","Saya mahu minum.","mi-num"],["TANDAS","🚻","Saya mahu pergi ke tandas.","tan-das"],["TOLONG","🆘","Tolong bantu saya.","to-long"],["TIDUR","🛏️","Saya mahu tidur.","ti-dur"],["REHAT","🧘","Saya mahu berehat.","re-hat"],["MANDI","🚿","Saya mahu mandi.","man-di"],["LAPAR","🍽️","Saya lapar.","la-par"],["DAHAGA","💧","Saya dahaga.","da-ha-ga"],["TUKAR BAJU","👚","Saya mahu menukar baju.","tu-kar ba-ju"]]},
+aktiviti:{title:"AKTIVITI",items:[["BERMAIN","🧸","Saya mahu bermain.","ber-ma-in"],["MEMBACA","📚","Saya mahu membaca.","mem-ba-ca"],["MENYANYI","🎤","Saya mahu menyanyi.","me-nya-nyi"],["MENONTON","📺","Saya mahu menonton.","me-non-ton"],["BERJALAN","🚶","Saya mahu berjalan.","ber-ja-lan"],["KRAF TANGAN","✂️","Saya mahu membuat kraf tangan.","kraf ta-ngan"],["MEMBINA","🧱","Saya mahu membina sesuatu.","mem-bi-na"],["MENYUSUN","🧩","Saya mahu menyusun.","me-nyu-sun"],["KOMPUTER","💻","Saya mahu menggunakan komputer.","kom-pu-ter"]]}}
+let cat="perasaan",selected=null,tab="komunikasi";
+const $=x=>document.getElementById(x);
+let VOICES=[];
+function loadVoices(){VOICES=speechSynthesis.getVoices()||[]}
+if("speechSynthesis"in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}
+function malayVoice(){
+const n=l=>(l||"").toLowerCase().replace("_","-");
+const pick=f=>VOICES.find(f);
+return pick(v=>n(v.lang)==="ms-my")||pick(v=>n(v.lang).startsWith("ms"))||pick(v=>/malay|melayu/i.test(v.name))||null}
+function prep(t){return t.replace(/\s+/g," ").trim().toLowerCase().replace(/(^|[.!?]\s+)([a-z])/g,(m,a,b)=>a+b.toUpperCase())}
+function speakOne(t,rate,pause){return new Promise(res=>{const u=new SpeechSynthesisUtterance(t),v=malayVoice();
+u.lang="ms-MY";if(v){u.voice=v;u.lang=v.lang}u.rate=rate;u.pitch=1;u.volume=1;
+u.onend=()=>setTimeout(res,pause||0);u.onerror=()=>res();speechSynthesis.speak(u)})}
+let curAudio=null;
+function note(m){let n=document.getElementById("note");if(!n){n=document.createElement("div");n.id="note";n.style.cssText="position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:#fff3cd;border:1px solid #e0c36a;color:#5c4a00;padding:8px 14px;border-radius:10px;font-size:13px;z-index:9;max-width:90%;text-align:center";document.body.appendChild(n)}n.textContent=m;n.style.display="block";clearTimeout(n.t);n.t=setTimeout(()=>n.style.display="none",4000)}
+
+function play(kind,fb,opt){
+if("speechSynthesis"in window)speechSynthesis.cancel();
+if(curAudio){curAudio.pause();curAudio=null}
+const name=cat+"_"+String(selected).padStart(2,"0")+"_"+kind+".mp3";
+const paths=[name,"audio/"+name,"audio1/"+name];let i=0;
+const fall=()=>{note("⚠️ Fail audio tiada · guna suara peranti (mungkin tidak standard)");say(fb,opt)};
+const tryNext=()=>{if(i>=paths.length){fall();return}
+const a=new Audio(paths[i++]);curAudio=a;a.onerror=()=>{if(curAudio===a)tryNext()};a.play().catch(e=>{if(curAudio===a&&e&&e.name!=="AbortError")tryNext()})};
+tryNext()}
+let token=0;
+async function say(t,opt){
+if(!("speechSynthesis"in window)){alert("Pelayar tidak menyokong fungsi suara.");return}
+opt=opt||{};const my=++token;speechSynthesis.cancel();loadVoices();
+const parts=Array.isArray(t)?t:[t];
+for(const p of parts){if(my!==token)return;await speakOne(opt.raw?p:prep(p),opt.rate||.85,opt.pause||0)}}
+function chooseCat(c){cat=c;document.querySelectorAll(".cat").forEach(b=>b.classList.toggle("active",b.dataset.cat===c));$("catTitle").textContent=D[c].title;$("catCount").textContent=D[c].items.length+" kad";$("cards").innerHTML="";D[c].items.forEach((x,i)=>{let b=document.createElement("button");b.className="card";b.innerHTML='<span class="emoji">'+x[1]+'</span><span class="word">'+x[0]+'</span>';b.onclick=()=>chooseCard(i);$("cards").appendChild(b)})}
+function chooseCard(i){selected=i;tab="komunikasi";$("detail").classList.remove("hidden");$("wordTitle").textContent=D[cat].items[i][0];document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));render();$("detail").scrollIntoView({behavior:"smooth",block:"start"})}
+function render(){let x=D[cat].items[selected],w=x[0],emoji=x[1],sentence=x[2],syll=x[3],c=$("content");
+if(tab==="komunikasi"){c.innerHTML='<div class="muted">AYAT KOMUNIKASI</div><div class="big">'+sentence+'</div><p class="muted">Gunakan ayat ini untuk membantu murid menyampaikan kehendak atau perasaan. Guru boleh membimbing murid memilih atau menyebut ayat mengikut keupayaan.</p><button class="action" id="s1">🔊 Dengar ayat</button><button class="action secondary" id="s2">Dengar perkataan</button>'; $("s1").onclick=()=>play("ayat",sentence);$("s2").onclick=()=>play("kata",w.toLowerCase())}
+else if(tab==="pembelajaran"){c.innerHTML='<div class="muted">KENALI PERKATAAN</div><div class="big">'+emoji+' '+w+'</div><p><b>Suku kata:</b> '+syll.toUpperCase()+'</p><p class="muted">Dengar sebutan dan cuba sebut semula mengikut kemampuan.</p><button class="action" id="s1">🔊 Dengar perkataan</button><button class="action secondary" id="s2">Dengar suku kata</button>';$("s1").onclick=()=>play("kata",w.toLowerCase());$("s2").onclick=()=>play("suku",syll.split(/[-\s]+/),{rate:.6,pause:350,raw:true})}
+else{let all=Object.values(D).flatMap(o=>o.items),opts=[x,...all.filter(a=>a[0]!==w).sort(()=>Math.random()-.5).slice(0,3)].sort(()=>Math.random()-.5),answer=opts.findIndex(a=>a[0]===w);c.innerHTML='<div class="muted">LATIHAN 1 · KENAL PASTI PERKATAAN</div><div class="big">Pilih perkataan yang sepadan dengan gambar:</div><div style="font-size:48px;text-align:center">'+emoji+'</div><div class="options">'+opts.map((a,i)=>'<button class="option" data-i="'+i+'">'+a[0]+'</button>').join("")+'</div><div class="feedback" id="feedback"></div><button class="action secondary" id="hear">🔊 Dengar perkataan</button>';c.querySelectorAll(".option").forEach(b=>b.onclick=()=>{c.querySelectorAll(".option").forEach(z=>z.disabled=true);if(+b.dataset.i===answer){b.classList.add("correct");$("feedback").textContent="Bagus! Jawapan betul."}else{b.classList.add("wrong");c.querySelectorAll(".option")[answer].classList.add("correct");$("feedback").textContent="Belum tepat. Jawapan betul ditandakan."}});$("hear").onclick=()=>play("kata",w.toLowerCase())}}
+document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{chooseCat(b.dataset.cat);$("detail").classList.add("hidden")});document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll(".tab").forEach(z=>z.classList.toggle("active",z===b));render()});
+let q=new URLSearchParams(location.search).get("category");chooseCat(D[q]?q:"perasaan");
+</script></body></html>
