@@ -56,5 +56,24 @@ if(tab==="komunikasi"){c.innerHTML='<div class="muted">AYAT KOMUNIKASI</div><div
 else if(tab==="pembelajaran"){c.innerHTML='<div class="muted">KENALI PERKATAAN</div><div class="big">'+emoji+' '+w+'</div><p><b>Suku kata:</b> '+syll.toUpperCase()+'</p><p class="muted">Dengar sebutan dan cuba sebut semula mengikut kemampuan.</p><button class="action" id="s1">🔊 Dengar perkataan</button><button class="action secondary" id="s2">Dengar suku kata</button>';$("s1").onclick=()=>play("kata",w.toLowerCase());$("s2").onclick=()=>play("suku",syll.split(/[-\s]+/),{rate:.6,pause:350,raw:true})}
 else{let all=Object.values(D).flatMap(o=>o.items),opts=[x,...all.filter(a=>a[0]!==w).sort(()=>Math.random()-.5).slice(0,3)].sort(()=>Math.random()-.5),answer=opts.findIndex(a=>a[0]===w);c.innerHTML='<div class="muted">LATIHAN 1 · KENAL PASTI PERKATAAN</div><div class="big">Pilih perkataan yang sepadan dengan gambar:</div><div style="font-size:48px;text-align:center">'+emoji+'</div><div class="options">'+opts.map((a,i)=>'<button class="option" data-i="'+i+'">'+a[0]+'</button>').join("")+'</div><div class="feedback" id="feedback"></div><button class="action secondary" id="hear">🔊 Dengar perkataan</button>';c.querySelectorAll(".option").forEach(b=>b.onclick=()=>{c.querySelectorAll(".option").forEach(z=>z.disabled=true);if(+b.dataset.i===answer){b.classList.add("correct");$("feedback").textContent="Bagus! Jawapan betul."}else{b.classList.add("wrong");c.querySelectorAll(".option")[answer].classList.add("correct");$("feedback").textContent="Belum tepat. Jawapan betul ditandakan."}});$("hear").onclick=()=>play("kata",w.toLowerCase())}}
 document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{chooseCat(b.dataset.cat);$("detail").classList.add("hidden")});document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll(".tab").forEach(z=>z.classList.toggle("active",z===b));render()});
-let q=new URLSearchParams(location.search).get("category");chooseCat(D[q]?q:"perasaan");
+// NFC deep-link: ?card=lapar opens one specific card; ?category=perasaan opens a category.
+function cardSlug(label){
+ return label.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+}
+const params=new URLSearchParams(location.search);
+const cardParam=(params.get("card")||"").toLowerCase().trim();
+const categoryParam=(params.get("category")||"").toLowerCase().trim();
+let target=null;
+if(cardParam){
+ for(const [categoryKey,categoryData] of Object.entries(D)){
+  const foundIndex=categoryData.items.findIndex(item=>cardSlug(item[0])===cardParam);
+  if(foundIndex!==-1){target={category:categoryKey,index:foundIndex};break;}
+ }
+}
+if(target){
+ chooseCat(target.category);
+ chooseCard(target.index);
+}else{
+ chooseCat(D[categoryParam]?categoryParam:"perasaan");
+}
 </script></body></html>
