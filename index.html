@@ -58,7 +58,7 @@ else{let all=Object.values(D).flatMap(o=>o.items),opts=[x,...all.filter(a=>a[0]!
 document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{chooseCat(b.dataset.cat);$("detail").classList.add("hidden")});document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll(".tab").forEach(z=>z.classList.toggle("active",z===b));render()});
 // NFC deep-link: ?card=lapar opens one specific card; ?category=perasaan opens a category.
 function cardSlug(label){
- return label.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+ return label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 }
 const params=new URLSearchParams(location.search);
 const cardParam=(params.get("card")||"").toLowerCase().trim();
