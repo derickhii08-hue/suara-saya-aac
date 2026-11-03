@@ -61,19 +61,26 @@ function cardSlug(label){
  return label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 }
 const params=new URLSearchParams(location.search);
-const cardParam=(params.get("card")||"").toLowerCase().trim();
+const cardParam=(params.get("card")||"").trim().toLowerCase().replace(/\+/g," ");
 const categoryParam=(params.get("category")||"").toLowerCase().trim();
 let target=null;
-if(cardParam){
+
+// Explicit route for KRAF TANGAN, plus the normal slug lookup for all cards.
+if(cardParam==="kraf-tangan"){
+ target={category:"aktiviti",index:D.aktiviti.items.findIndex(item=>item[0]==="KRAF TANGAN")};
+}
+if(cardParam && !target){
+ const normalizedParam=cardSlug(decodeURIComponent(cardParam));
  for(const [categoryKey,categoryData] of Object.entries(D)){
-  const foundIndex=categoryData.items.findIndex(item=>cardSlug(item[0])===cardParam);
+  const foundIndex=categoryData.items.findIndex(item=>cardSlug(item[0])===normalizedParam);
   if(foundIndex!==-1){target={category:categoryKey,index:foundIndex};break;}
  }
 }
-if(target){
+if(target && target.index>=0){
  chooseCat(target.category);
  chooseCard(target.index);
 }else{
- chooseCat(D[categoryParam]?categoryParam:"perasaan");
+ // If a card slug is unknown, show its known category when supplied; otherwise Perasaan.
+ chooseCat(D[categoryParam]?categoryParam:(cardParam==="kraf-tangan"?"aktiviti":"perasaan"));
 }
 </script></body></html>
