@@ -1,0 +1,602 @@
+{
+ "aktiviti_00_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu bermain.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_00_kata.mp3": {
+  "rate": "-10%",
+  "text": "bermain",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_00_suku.mp3": {
+  "rate": "-35%",
+  "text": "ber, ma, in.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_01_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu membaca.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_01_kata.mp3": {
+  "rate": "-10%",
+  "text": "membaca",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_01_suku.mp3": {
+  "rate": "-35%",
+  "text": "mem, ba, ca.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_02_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu menyanyi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_02_kata.mp3": {
+  "rate": "-10%",
+  "text": "menyanyi",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_02_suku.mp3": {
+  "rate": "-35%",
+  "text": "me, nya, nyi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_03_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu menonton.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_03_kata.mp3": {
+  "rate": "-10%",
+  "text": "menonton",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_03_suku.mp3": {
+  "rate": "-35%",
+  "text": "me, non, ton.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_04_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu berjalan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_04_kata.mp3": {
+  "rate": "-10%",
+  "text": "berjalan",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_04_suku.mp3": {
+  "rate": "-35%",
+  "text": "ber, ja, lan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_05_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu membuat kraf tangan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_05_kata.mp3": {
+  "rate": "-10%",
+  "text": "kraf tangan",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_05_suku.mp3": {
+  "rate": "-35%",
+  "text": "kraf, ta, ngan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_06_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu membina sesuatu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_06_kata.mp3": {
+  "rate": "-10%",
+  "text": "membina",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_06_suku.mp3": {
+  "rate": "-35%",
+  "text": "mem, bi, na.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_07_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu menyusun.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_07_kata.mp3": {
+  "rate": "-10%",
+  "text": "menyusun",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_07_suku.mp3": {
+  "rate": "-35%",
+  "text": "me, nyu, sun.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_08_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu menggunakan komputer.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_08_kata.mp3": {
+  "rate": "-10%",
+  "text": "komputer",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "aktiviti_08_suku.mp3": {
+  "rate": "-35%",
+  "text": "kom, pu, ter.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_00_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu makan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_00_kata.mp3": {
+  "rate": "-10%",
+  "text": "makan",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_00_suku.mp3": {
+  "rate": "-35%",
+  "text": "ma, kan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_01_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu minum.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_01_kata.mp3": {
+  "rate": "-10%",
+  "text": "minum",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_01_suku.mp3": {
+  "rate": "-35%",
+  "text": "mi, num.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_02_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu pergi ke tandas.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_02_kata.mp3": {
+  "rate": "-10%",
+  "text": "tandas",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_02_suku.mp3": {
+  "rate": "-35%",
+  "text": "tan, das.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_03_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Tolong bantu saya.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_03_kata.mp3": {
+  "rate": "-10%",
+  "text": "tolong",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_03_suku.mp3": {
+  "rate": "-35%",
+  "text": "to, long.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_04_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu tidur.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_04_kata.mp3": {
+  "rate": "-10%",
+  "text": "tidur",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_04_suku.mp3": {
+  "rate": "-35%",
+  "text": "ti, dur.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_05_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu berehat.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_05_kata.mp3": {
+  "rate": "-10%",
+  "text": "rehat",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_05_suku.mp3": {
+  "rate": "-35%",
+  "text": "re, hat.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_06_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu mandi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_06_kata.mp3": {
+  "rate": "-10%",
+  "text": "mandi",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_06_suku.mp3": {
+  "rate": "-35%",
+  "text": "man, di.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_07_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya lapar.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_07_kata.mp3": {
+  "rate": "-10%",
+  "text": "lapar",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_07_suku.mp3": {
+  "rate": "-35%",
+  "text": "la, par.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_08_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya dahaga.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_08_kata.mp3": {
+  "rate": "-10%",
+  "text": "dahaga",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_08_suku.mp3": {
+  "rate": "-35%",
+  "text": "da, ha, ga.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_09_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu menukar baju.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_09_kata.mp3": {
+  "rate": "-10%",
+  "text": "tukar baju",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "keperluan_09_suku.mp3": {
+  "rate": "-35%",
+  "text": "tu, kar, ba, ju.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_00_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa gembira.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_00_kata.mp3": {
+  "rate": "-10%",
+  "text": "gembira",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_00_suku.mp3": {
+  "rate": "-35%",
+  "text": "gəm, bi, ra.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_01_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa takut.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_01_kata.mp3": {
+  "rate": "-10%",
+  "text": "takut",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_01_suku.mp3": {
+  "rate": "-35%",
+  "text": "ta, kut.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_02_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa penat.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_02_kata.mp3": {
+  "rate": "-10%",
+  "text": "penat",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_02_suku.mp3": {
+  "rate": "-35%",
+  "text": "pe, nat.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_03_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa sakit.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_03_kata.mp3": {
+  "rate": "-10%",
+  "text": "sakit",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_03_suku.mp3": {
+  "rate": "-35%",
+  "text": "sa, kit.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_04_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa tenang.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_04_kata.mp3": {
+  "rate": "-10%",
+  "text": "tenang",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_04_suku.mp3": {
+  "rate": "-35%",
+  "text": "te, nang.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_05_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa kecewa.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_05_kata.mp3": {
+  "rate": "-10%",
+  "text": "kecewa",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_05_suku.mp3": {
+  "rate": "-35%",
+  "text": "ke, ce, wa.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_06_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa terkejut.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_06_kata.mp3": {
+  "rate": "-10%",
+  "text": "terkejut",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_06_suku.mp3": {
+  "rate": "-35%",
+  "text": "ter, ke, jut.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_07_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya berasa sunyi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_07_kata.mp3": {
+  "rate": "-10%",
+  "text": "sunyi",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_07_suku.mp3": {
+  "rate": "-35%",
+  "text": "su, nyi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_08_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya sayang kamu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_08_kata.mp3": {
+  "rate": "-10%",
+  "text": "sayang",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "perasaan_08_suku.mp3": {
+  "rate": "-35%",
+  "text": "sa, yang.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_00_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Ya, saya setuju.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_00_kata.mp3": {
+  "rate": "-10%",
+  "text": "ya",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_00_suku.mp3": {
+  "rate": "-35%",
+  "text": "ya.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_01_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Tidak, saya tidak mahu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_01_kata.mp3": {
+  "rate": "-10%",
+  "text": "tidak",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_01_suku.mp3": {
+  "rate": "-35%",
+  "text": "ti, dak.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_02_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu ini.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_02_kata.mp3": {
+  "rate": "-10%",
+  "text": "mahu",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_02_suku.mp3": {
+  "rate": "-35%",
+  "text": "ma, hu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_03_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya tidak mahu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_03_kata.mp3": {
+  "rate": "-10%",
+  "text": "tidak mahu",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_03_suku.mp3": {
+  "rate": "-35%",
+  "text": "ti, dak, ma, hu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_04_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Tolong berhenti.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_04_kata.mp3": {
+  "rate": "-10%",
+  "text": "berhenti",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_04_suku.mp3": {
+  "rate": "-35%",
+  "text": "ber, hen, ti.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_05_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu lagi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_05_kata.mp3": {
+  "rate": "-10%",
+  "text": "lagi",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_05_suku.mp3": {
+  "rate": "-35%",
+  "text": "la, gi.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_06_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya sudah siap.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_06_kata.mp3": {
+  "rate": "-10%",
+  "text": "siap",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_06_suku.mp3": {
+  "rate": "-35%",
+  "text": "si, ap.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_07_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu memilih.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_07_kata.mp3": {
+  "rate": "-10%",
+  "text": "pilih",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_07_suku.mp3": {
+  "rate": "-35%",
+  "text": "pi, lih.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_08_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Sila tunggu sebentar.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_08_kata.mp3": {
+  "rate": "-10%",
+  "text": "tunggu",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_08_suku.mp3": {
+  "rate": "-35%",
+  "text": "tung, gu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_09_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Saya mahu membatalkan.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_09_kata.mp3": {
+  "rate": "-10%",
+  "text": "batal",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_09_suku.mp3": {
+  "rate": "-35%",
+  "text": "ba, tal.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_10_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Tolong berikan kepada saya.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_10_kata.mp3": {
+  "rate": "-10%",
+  "text": "beri",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_10_suku.mp3": {
+  "rate": "-35%",
+  "text": "be, ri.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_11_ayat.mp3": {
+  "rate": "-5%",
+  "text": "Jangan buat begitu.",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_11_kata.mp3": {
+  "rate": "-10%",
+  "text": "jangan",
+  "voice": "ms-MY-YasminNeural"
+ },
+ "pilihan_11_suku.mp3": {
+  "rate": "-35%",
+  "text": "ja, ngan.",
+  "voice": "ms-MY-YasminNeural"
+ }
+}
